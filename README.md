@@ -12,5 +12,6 @@
 
 
 ## Chapter 3
+* chapter3-1: Data Type Zero Value
 
 ## Chapter 4
