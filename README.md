@@ -13,5 +13,7 @@
 
 ## Chapter 3
 * chapter3-1: Data Type Zero Value
+* chapter3-2: Data Type String
+* chapter3-3: Data Type Float
 
 ## Chapter 4
