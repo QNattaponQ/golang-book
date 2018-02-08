@@ -29,6 +29,7 @@ func main() {
 	const xxx string = "Hello, world"
 	//b = "Other string"
 
+	//Set variable
 	var (
 		a = 5
 		b = 10
@@ -39,7 +40,7 @@ func main() {
 	fmt.Println(c)
 
 	v1, v2 := "first", "second"
-	v1, v2 = v2,v1
+	v1, v2 = v2, v1 //Swap variable
 	fmt.Println(v1)
 	fmt.Println(v2)
 
