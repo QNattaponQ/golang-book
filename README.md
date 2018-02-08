@@ -17,4 +17,4 @@
 * chapter3-3: Data Type Float
 
 ## Chapter 4
-* chapter4-1: Variables
+* chapter4-1: Variables (How to set variable)
