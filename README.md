@@ -21,4 +21,7 @@
 * chapter4-2: Input data
 
 ## Chapter 5
-* chapter5-1: Conditions
+* chapter5-1: Conditions [For]
+* chapter5-2: Conditions [If]
+* chapter5-3: Conditions [Switch Case]
+* chapter5-4: Problem solve
