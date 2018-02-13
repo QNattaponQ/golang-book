@@ -8,7 +8,7 @@ import (
 func main() {
 	random := rand.ExpFloat64()
 
-	for i := 1; i <= 6; i++ {
+	for i := 1; i <= 10; i++ {
 		fmt.Print("Enter a number: ")
 		var input float64
 		fmt.Scanf("%f\n", &input) //Prompt Input data
