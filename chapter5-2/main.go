@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
+
 
 func main() {
 	/*
@@ -29,6 +33,8 @@ func findFizzBuzz(j int) (result string) {
 		result = "Fizz"
 	} else if j%15 == 0 { 
 		result = "FizzBuzz"
+	} else {
+		result = strconv.Itoa(j)
 	}
 	return
 }
