@@ -31,3 +31,6 @@
 * chapter6-2: Function 2
 * chapter6-3: Fucntion Multiple value return 
 * chapter6-4: Function Multiple parameter
+
+## Chapter 7
+* chapter7-1: Array
