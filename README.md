@@ -39,3 +39,8 @@
 * chapter7-4: Copy slice
 * chapter7-5: Map
 * chapter7-6: Delete Map
+* chapter7-7: How to use Map
+* chapter7-8: range and array
+* chapter7-9: range and slice
+* chapter7-10: range and map
+* chapter7-11: range and string
