@@ -25,3 +25,6 @@
 * chapter5-2: Conditions [If]
 * chapter5-3: Conditions [Switch Case]
 * chapter5-4: Problem solve
+
+## Chapter 6
+* chapter6-1: Function
