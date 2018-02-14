@@ -27,7 +27,7 @@ func findFizzBuzz(j int) (result string) {
 		result = "Buzz"
 	} else if j%3 == 0 {
 		result = "Fizz"
-	} else if j%15 == 0 {
+	} else if j%15 == 0 { 
 		result = "FizzBuzz"
 	}
 	return
