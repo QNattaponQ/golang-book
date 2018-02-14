@@ -38,3 +38,4 @@
 * chapter7-3: Array + slice
 * chapter7-4: Copy slice
 * chapter7-5: Map
+* chapter7-6: Delete Map
