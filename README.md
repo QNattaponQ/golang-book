@@ -34,3 +34,4 @@
 
 ## Chapter 7
 * chapter7-1: Array
+* chapter7-2: Slice
