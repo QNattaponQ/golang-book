@@ -29,4 +29,5 @@
 ## Chapter 6
 * chapter6-1: Function 1
 * chapter6-2: Function 2
-* chapter6-3: Fucntion Multiple value return
+* chapter6-3: Fucntion Multiple value return 
+* chapter6-4: Function Multiple parameter
