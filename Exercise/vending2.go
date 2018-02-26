@@ -17,8 +17,19 @@ func (m *VendingMachine) InsertCoin(coin string) {
 	m.insertedMoney+=m.coins[coin]
 }
 
-func (m VendingMachine) SelectSD() string {
+func (m *VendingMachine) SelectSD() string {
+	m.insertedMoney=0
 	return "Soft Drink"
+}
+
+func (m *VendingMachine) SelectCC() string {
+	m.insertedMoney=0
+	return "Can Coffee"
+}
+
+func (m *VendingMachine) SelectDK() string {
+	m.insertedMoney=0
+	return "Drinking water"
 }
 
 
@@ -37,4 +48,16 @@ func main() {
 	fmt.Println("Currently inserted money:", vm.InsertedMoney())
 	can := vm.SelectSD()
 	fmt.Println(can)	
+	
+	vm.InsertCoin("T")
+	vm.InsertCoin("TW")
+	fmt.Println("Currently inserted money:", vm.InsertedMoney())
+	can = vm.SelectCC()
+	fmt.Println(can)
+	
+	vm.InsertCoin("T")
+	vm.InsertCoin("T")
+	fmt.Println("Currently inserted money:", vm.InsertedMoney())
+	can = vm.SelectDK()
+	fmt.Println(can)
 }
