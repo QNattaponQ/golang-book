@@ -5,15 +5,21 @@ import (
 )
 
 type VendingMachine struct {
-	coins string
+	insertedMoney int
 }
 
 func (m VendingMachine) InsertedMoney() int {
-	return 0
+	return m.insertedMoney
+}
+
+func (m *VendingMachine) InsertCoin(coin string) {
+	m.insertedMoney=10
 }
 
 
 func main() {
 	vm := VendingMachine{}
+	fmt.Println("Currently inserted money:", vm.InsertedMoney())
+	vm.InsertCoin("T")
 	fmt.Println("Currently inserted money:", vm.InsertedMoney())	
 }
