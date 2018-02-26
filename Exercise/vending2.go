@@ -33,7 +33,7 @@ func (m *VendingMachine) SelectCC() string {
 }
 
 func (m *VendingMachine) SelectDK() string {
-	price := m.items["DK"]
+	price := m.items["DW"]
 	change := m.insertedMoney - price
 	m.insertedMoney=0
 	return "Drinking water" + m.change(change)
@@ -42,10 +42,24 @@ func (m *VendingMachine) SelectDK() string {
 
 func (m VendingMachine) change(c int) string {
 	var str string
-	if c==8 {
-		str += ", F, TW, O"
+	values := [...]int {10,5,2,1}
+	coins := [...]string {"T", "F", "TW", "0"}
+	
+	for i:=0; i < len(values); i++ {
+		if c >=values[i] {
+			str += ", " + coins[i]
+			c -= values[i]
+			i--
+		}
 	}
+	
 	return str
+}
+
+func (vm *VendingMachine) CoinReturn() string {
+	coins := vm.change(vm.insertedMoney)
+	vm.insertedMoney=0
+	return coins[2:len(coins)]
 }
 
 
@@ -72,14 +86,23 @@ func main() {
 	can := vm.SelectSD()
 	fmt.Println(can)	
 	
+	fmt.Println()
 	vm.InsertCoin("T")
 	vm.InsertCoin("T")
 	fmt.Println("Currently inserted money:", vm.InsertedMoney())
 	can = vm.SelectCC()
 	fmt.Println(can)
 	
+	fmt.Println()
 	vm.InsertCoin("T")
 	fmt.Println("Currently inserted money:", vm.InsertedMoney())
 	can = vm.SelectDK()
 	fmt.Println(can)
+
+	fmt.Println()
+	vm.InsertCoin("T")
+	vm.InsertCoin("F")
+	fmt.Println("Currently inserted money:", vm.InsertedMoney())
+	coin := vm.CoinReturn()
+	fmt.Println(coin)
 }
