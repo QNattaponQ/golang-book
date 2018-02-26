@@ -41,10 +41,11 @@ func (m *VendingMachine) SelectDK() string {
 }
 
 func (m VendingMachine) change(c int) string {
-	if c==0 {
-		return ""
+	var str string
+	if c==8 {
+		str += ", F, TW, O"
 	}
-	return ",F, TW, 0"
+	return str
 }
 
 
