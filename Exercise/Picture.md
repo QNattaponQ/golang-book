@@ -1,0 +1,1 @@
+![Golang](http://cyber-dojo.org/images/avatars/leopard.jpg)
