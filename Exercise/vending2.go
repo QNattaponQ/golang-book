@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"vendingMachine"
+	"github.com/QNattaponQ/vendingMachine"
 )
 
 var coins = map[string]int{
