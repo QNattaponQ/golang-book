@@ -1,6 +1,6 @@
 # Go Book
 
-[![Golang](http://cyber-dojo.org/images/avatars/leopard.jpg)]
+![Golang](http://cyber-dojo.org/images/avatars/leopard.jpg)
 
 **Name:** *Nattapon Tussanabunlue*
 
