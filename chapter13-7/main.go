@@ -14,7 +14,7 @@ var (
 
 func main() {
 	wg.Add(16)
-	for i:=1; i<17; i++ {
+	for i:=1; i<=16; i++ {
 		go increment(i)
 	}
 	wg.Wait()
