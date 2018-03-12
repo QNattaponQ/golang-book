@@ -8,11 +8,11 @@ import (
 type HomePageHandler struct{}
 
 func (h *HomePageHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	name := r.URL.Query().Get("name")
+	name := r.URL.Query().Get("name")  //localhost:3000/?name=xyz
 	if name == "" {
 		name = "World"
 	}
-	fmt.Fprintln(w, "Hello, %s!", name)
+	fmt.Fprintln(w, "Hello,", name)
 }
 
 func main() {
