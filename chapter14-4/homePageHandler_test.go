@@ -24,7 +24,7 @@ func TestHomePageHandler2(t *testing.T) {
 
 	HomePageHandler(res, req)
 
-	if res.Code != 300 {
-		t.Fatalf("Expected status to == 200, but got %d", res.Code)
+	if res.Body.String() != "Hello world!" {
+		t.Fatalf("Expected body == Hello world!, but got %s", res.Body.String())
 	}
 }
