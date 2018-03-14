@@ -1,16 +1,16 @@
 package home
 
 import (
+	"encoding/json"
 	"net/http"
 	"time"
-	"encoding/json"
 )
 
 type User struct {
 	FirstName string    `json:"first_name"`
 	LastName  string    `json:"last_name"`
-	Email     string    `json: "email"`
-	CreatedAt time.Time `json: "created_at"`
+	Email     string    `json:"email"`
+	CreatedAt time.Time `json:"created_at"`
 }
 type HomePageHandler struct{}
 
